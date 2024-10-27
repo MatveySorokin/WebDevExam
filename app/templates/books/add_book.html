@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Добавить книгу{% endblock %}
+
+{% block content %}
+<h1>Добавить книгу</h1>
+{% from "books/book_form.html" import book_form %}
+{{ book_form(book, genres) }}
+{% endblock %}
